@@ -1,0 +1,36 @@
+# Rust build and dependency files
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Editor and IDE files
+/.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Logs and temp files
+*.log
+*.tmp
+
+# By-products
+*.d
+*.rlib
+
+# Test output
+/tests/output/
+
+# Misc
+.DS_Store
+CACHEDIR.TAG
+
+# Ignore Python query highlights
+queries/python/*.pyc
+__pycache__/
+
+# Ignore generated files
+*.generated.*
+
+# Ignore Rust Analyzer
+/target/rust-analyzer/
