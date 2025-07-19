@@ -1,0 +1,140 @@
+# Example highlight queries for Perl
+
+; Keywords
+"and" @keyword
+"bless" @keyword
+"break" @keyword
+"cmp" @keyword
+"continue" @keyword
+"do" @keyword
+"each" @keyword
+"else" @keyword
+"elsif" @keyword
+"eq" @keyword
+"eval" @keyword
+"exists" @keyword
+"for" @keyword
+"foreach" @keyword
+"ge" @keyword
+"given" @keyword
+"goto" @keyword
+"grep" @keyword
+"gt" @keyword
+"if" @keyword
+"keys" @keyword
+"last" @keyword
+"le" @keyword
+"local" @keyword
+"lock" @keyword
+"lt" @keyword
+"map" @keyword
+"my" @keyword
+"ne" @keyword
+"next" @keyword
+"no" @keyword
+"not" @keyword
+"or" @keyword
+"our" @keyword
+"package" @keyword
+"print" @keyword
+"printf" @keyword
+"redo" @keyword
+"ref" @keyword
+"require" @keyword
+"return" @keyword
+"say" @keyword
+"sort" @keyword
+"state" @keyword
+"sub" @keyword
+"undef" @keyword
+"unless" @keyword
+"until" @keyword
+"use" @keyword
+"values" @keyword
+"when" @keyword
+"while" @keyword
+"x" @keyword
+"xor" @keyword
+
+; Variables
+(scalar_variable) @variable
+(array_variable) @variable
+(hash_variable) @variable
+(glob_variable) @variable
+
+; Functions
+(subroutine_declaration name: (identifier) @function)
+(call_expression function: (identifier) @function.call)
+
+; Strings
+(string_literal) @string
+(interpolated_string_literal) @string
+(regex_pattern) @string.regex
+
+; Numbers
+(integer) @number
+(float) @number
+
+; Comments
+(comment) @comment
+
+; Special variables
+"$_" @variable.builtin
+"@_" @variable.builtin
+"%_" @variable.builtin
+"$!" @variable.builtin
+"$?" @variable.builtin
+"$$" @variable.builtin
+"$0" @variable.builtin
+
+; Operators
+"+" @operator
+"-" @operator
+"*" @operator
+"/" @operator
+"%" @operator
+"**" @operator
+"=" @operator
+"+=" @operator
+"-=" @operator
+"*=" @operator
+"/=" @operator
+"%=" @operator
+"**=" @operator
+".=" @operator
+"==" @operator
+"!=" @operator
+"<" @operator
+">" @operator
+"<=" @operator
+">=" @operator
+"<=>" @operator
+"&&" @operator
+"||" @operator
+"!" @operator
+"&" @operator
+"|" @operator
+"^" @operator
+"~" @operator
+"<<" @operator
+">>" @operator
+"." @operator
+".." @operator
+"..." @operator
+"=~" @operator
+"!~" @operator
+
+; Punctuation
+"(" @punctuation.bracket
+")" @punctuation.bracket
+"[" @punctuation.bracket
+"]" @punctuation.bracket
+"{" @punctuation.bracket
+"}" @punctuation.bracket
+";" @punctuation.delimiter
+"," @punctuation.delimiter
+"->" @punctuation.delimiter
+"::" @punctuation.delimiter
+"$" @punctuation.special
+"@" @punctuation.special
+"%" @punctuation.special
